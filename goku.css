@@ -1,0 +1,838 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.neck {
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    background-color: #ebc1a6;
+    margin-top: 140px;
+    margin-left: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 94% 100%, 4% 100%);
+}
+
+.earleft {
+    width: 60px;
+    height: 80px;
+    margin-right: 200px;
+    margin-top: 80px;
+    transform: rotate(-10deg);
+    clip-path: polygon(20% 0, 35% 0, 61% 29%, 68% 100%, 29% 85%, 11% 66%, 11% 19%);
+}
+
+.earright {
+    width: 70px;
+    height: 80px;
+    margin-left: 230px;
+    margin-top: 80px;
+    transform: rotate(15deg);
+    clip-path: polygon(80% 0, 65% 0, 39% 29%, 32% 100%, 71% 85%, 89% 66%, 89% 19%);
+}
+
+.earleft, .earright {
+    position: absolute;
+    background-color: #e6bea3;
+}
+
+.cabe {
+    width: 236px;
+    height: 100px;
+    margin-left: 0.7%;
+    margin-bottom: 4%;
+    border-radius: 60px 60px 5px 5px;
+}
+
+.cabeum {
+    width: 300px;
+    height: 200px;
+    margin-left: 8px;
+    margin-top: 2%;
+    clip-path: polygon(12% 45%, 90% 45%, 76% 100%, 25% 100%);
+}
+
+.cabedois {
+    width: 160px;
+    height: 50px;
+    margin-left: 0.5%;
+    margin-top: 15%;
+    clip-path: polygon(0 0, 50% 100%, 50% 0);
+    transform: rotate(2deg);
+}
+
+.cabetres {
+    width: 160px;
+    height: 50px;
+    margin-left: 2.3%;
+    margin-top: 15%;
+    clip-path: polygon(100% 0, 50% 100%, 50% 0);
+    transform: rotate(-30deg)
+}
+
+.cabequatro {
+    width: 160px;
+    height: 100px;
+    margin-left: 1%;
+    margin-top: 12.5%;
+    clip-path: polygon(50% 0%, 100% 38%, 65% 100%, 35% 100%, 0% 38%);
+}
+
+.cabe,.cabeum , .cabedois, .cabetres, .cabequatro {
+    position: absolute;
+    background-color: #f3c8ac;
+}
+
+.eyebrow {
+    margin-top: 55px;
+    margin-right: 95px;
+    transform: rotate(28deg);
+    clip-path: polygon(22% 6%, 95% 46%, 89% 66%, 0 69%, 0 25%);
+    box-shadow: none;
+    animation: sobra 2s ease infinite alternate;
+}
+
+@keyframes sobra {
+    100% {
+        transform: rotate(34deg);
+        margin-top: 60px;
+        background-color: lightblue;
+        box-shadow: 0 0 5px lightblue,
+                    0 0 10px lightblue,
+                    0 0 15px blue;
+    }
+}
+
+.olhoum {
+    width: 40px;
+    height: 70px;
+    margin-left: 7%;
+    margin-top: 4%;
+    transform: rotate(-100deg);
+    clip-path: polygon(20% 0%,
+    40% 0%,
+    100% 115%,
+    10% 70%);
+}
+
+.pulpum {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.pulpum, .olhoum, .eyebrow, .eyebrowdois, .olhodois, .pulpdois {
+    position: absolute;
+}
+
+.olhoum, .olhodois {
+    box-shadow: inset 0 0 10px grey;
+    background-color: white;
+}
+
+.pulpum, .pulpdois {
+    animation: cordoolho 2s ease infinite alternate;
+}
+
+@keyframes cordoolho {
+     100% {
+        background-color: red;
+        border: 6px solid blueviolet;
+        box-shadow: 0 0 5px violet,
+                    0 0 10px violet;
+    }
+}
+
+.eyebrow, .eyebrowdois {
+    background-color: #f5ea2e;
+    width: 100px;
+    height: 30px;
+}
+
+.pulpum, .pulpdois {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border: 6px solid green;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.eyebrowdois {
+    margin-top: 59px;
+    margin-left: 120px;
+    transform: rotate(-28deg);
+    clip-path: polygon(78% 6%, 5% 46%, 11% 66%, 100% 69%, 100% 25%); 
+    box-shadow: none;
+    animation: sobra2 2s ease infinite alternate;   
+}
+
+@keyframes sobra2 {
+        100% {
+        transform: rotate(-34deg);
+        margin-top: 60px;
+        background-color: lightblue;
+        box-shadow: 0 0 5px lightblue,
+                    0 0 10px lightblue,
+                    0 0 15px blue;
+    }
+}
+
+.rugaraiva {
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 2px solid #ebaa81;
+    transform: rotate(90deg);
+    margin-top: 110px;
+    margin-right: 30px;
+    border-radius: 50px;
+    opacity: 0;
+    animation: raiva 2s infinite alternate;
+}
+
+@keyframes raiva {
+    100% {
+        opacity: 1;
+    }
+}
+
+.olhodois {
+    width: 40px;
+    height: 70px;
+    margin-left: -5.5%;
+    margin-top: 4%;
+    transform: rotate(-80deg);
+    clip-path: polygon(20% 100%,
+                       40% 100%,
+                       100% -15%,
+                       10% 30%);
+}
+
+.pulpdois {
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+
+.narizcontorno {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    margin-top: 9.5%;
+    margin-left: 0.4%;
+    background-color: #ebaa81;
+    clip-path: polygon(50% 7%, 85% 76%, 64% 91%, 50% 84%);   
+}
+
+
+.nariz {
+    position: absolute;
+    width: 55px;
+    height: 40px;
+    margin-top: 9.3%;
+    margin-left: 0.5%;
+    background-color: #ebc1a6;
+    clip-path: polygon(50% 0%, 85% 74%, 64% 93%, 50% 84%);
+}
+
+.narizsombra {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    margin-top: 9.3%;
+    margin-left: 0.5%;
+    background-color: #b88b6f;
+    clip-path: polygon(50% 0%, 11% 70%, 51% 100%);
+}
+
+
+.bocadois {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    margin-top: 12.7%;
+    margin-left: 1%;
+    border-radius: 50%;
+    border-top: 2px solid rgb(165, 139, 92);
+    background-color: transparent; 
+    animation: abrir 2s ease infinite alternate;   
+}
+
+@keyframes sumir {
+    100% {
+        margin-top: 320px;
+        opacity: 0.2;
+    }
+}
+
+@keyframes abrir {
+    100% {
+        width: 29px;
+        height: 30px;
+        background-color: black;
+        border-radius: 5%;
+        border-top: 5px solid white;
+        border-bottom: 4px solid white;
+        margin-right: 5px;
+        margin-top: 260px;
+    }
+}
+
+.bocatres {
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    margin-top: 13.6%;
+    margin-left: 0.8%;
+    border-radius: 50%;
+    border-top: 2px solid rgb(165, 139, 92);
+    background-color: transparent;
+    animation: sumir 2s ease infinite alternate;
+}
+
+.backhair1, .backhair2, .backhair3, .backhair4, .backhair5, .backhair6, .backhair7, .backhair8, .backhair9, .backhair10, .backhair11 {
+    position: absolute;
+    background-color: #e9df1b;
+}
+
+.backhair1 {
+    width: 290px;
+    height: 320px;
+    margin-bottom: 600px;
+    margin-left: 30px;
+    clip-path: polygon(59% 0, 83% 33%, 85% 61%, 78% 100%, 23% 100%, 29% 61%, 48% 34%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+@keyframes cabelo {
+    100% {
+        background-color: lightblue;
+        width: 300px;
+        height: 340;
+    }
+}
+
+.backhair2 {
+    width: 260px;
+    height: 320px;
+    margin-bottom: 430px;
+    margin-right: 100px;
+    clip-path: polygon(38% 1%, 50% 45%, 63% 76%, 75% 100%, 25% 100%, 15% 70%, 24% 35%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+.backhair3 {
+    width: 260px;
+    height: 250px;
+    margin-bottom: 350px;
+    margin-right: 250px;
+    transform: rotate(-28deg);
+    clip-path: polygon(38% 1%, 50% 45%, 63% 76%, 75% 100%, 25% 100%, 15% 70%, 24% 35%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+.backhair4 {
+    width: 240px;
+    height: 250px;
+    margin-bottom: 250px;
+    margin-right: 330px;
+    transform: rotate(-40deg);
+    clip-path: polygon(38% 1%, 50% 45%, 63% 76%, 75% 100%, 25% 100%, 15% 70%, 24% 35%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.backhair5 {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-right: 320px;
+    transform: rotate(-50deg);
+    clip-path: polygon(38% 1%, 50% 45%, 63% 76%, 75% 100%, 25% 100%, 15% 70%, 24% 35%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.backhair6 {
+    width: 60px;
+    height: 100px;
+    margin-top: 140px;
+    margin-right: 150px;
+    transform: rotate(-65deg);
+    clip-path: polygon(20% 0, 55% 41%, 70% 73%, 75% 100%, 25% 100%, 29% 70%, 24% 35%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.backhair7 {
+    width: 240px;
+    height: 250px;
+    margin-bottom: 440px;
+    margin-left: 340px;
+    transform: rotate(27deg);
+    clip-path: polygon(66% 45%, 39% 0, 28% 46%, 23% 70%, 20% 100%, 70% 100%, 72% 79%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+.backhair8 {
+    width: 240px;
+    height: 250px;
+    margin-bottom: 200px;
+    margin-left: 380px;
+    transform: rotate(55deg);
+    clip-path: polygon(66% 45%, 39% 0, 28% 46%, 23% 70%, 20% 100%, 70% 100%, 72% 79%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+.backhair9 {
+    width: 240px;
+    height: 250px;
+    margin-top: 15px;
+    margin-left: 280px;
+    transform: rotate(70deg);
+    clip-path: polygon(66% 45%, 39% 0, 28% 46%, 23% 70%, 20% 100%, 70% 100%, 72% 79%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.backhair10 {
+    width: 240px;
+    height: 250px;
+    margin-top: 130px;
+    margin-left: 70px;
+    transform: rotate(95deg);
+    clip-path: polygon(66% 45%, 39% 0, 28% 46%, 23% 70%, 20% 100%, 70% 100%, 72% 79%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.backhair11 {
+    width: 260px;
+    height: 320px;
+    margin-bottom: 470px;
+    margin-right: 50px;
+    clip-path: polygon(66% 45%, 51% 0, 34% 24%, 22% 63%, 20% 100%, 70% 100%, 72% 79%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.hair, .hairdois, .hairtres, .hairquatro, .haircinco, .hairseis, .hairsete, .hairoito {
+    position: absolute;
+    background-color: #f5ea2e;
+}
+
+.hair {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 450px;
+    clip-path: polygon(63% 0, 71% 31%, 79% 63%, 78% 100%, 17% 100%, 22% 60%, 37% 31%);
+    animation: cabelo 2s ease infinite alternate;  
+}
+
+.hairdois {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 380px;
+    margin-left: 200px;
+    clip-path: polygon(69% 0, 82% 26%, 88% 46%, 75% 100%, 9% 93%, 24% 49%, 47% 28%);
+    animation: cabelo 2s ease infinite alternate;  
+}
+
+.hairtres {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 340px;
+    margin-right: 250px; 
+    transform: rotate(-15deg);
+    clip-path: polygon(59% 0, 66% 45%, 97% 100%, 37% 100%, 21% 54%);
+    animation: cabelo 2s ease infinite alternate;
+}
+
+.hairquatro {
+    width: 120px;
+    height: 130px;
+    margin-bottom: 50px;
+    margin-left: 250px;    
+    clip-path: polygon(34% 0, 67% 8%, 90% 33%, 72% 70%, 36% 97%, 51% 57%, 42% 37%, 30% 36%);
+    animation: cabeloi 2s ease infinite alternate;    
+}
+
+.haircinco {
+    width: 120px;
+    height: 190px;
+    margin-bottom: 80px;
+    margin-left: 180px;    
+    clip-path: polygon(34% 0, 67% 8%, 90% 33%, 72% 70%, 36% 97%, 51% 57%, 42% 37%, 30% 36%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.hairseis {
+    width: 120px;
+    height: 190px;
+    margin-bottom: 115px;
+    margin-right: 180px;
+    clip-path: polygon(11% 58%, 56% 10%, 100% 12%, 95% 41%, 68% 39%, 35% 72%, 51% 100%, 16% 86%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+.hairsete {
+    width: 120px;
+    height: 190px;
+    margin-bottom: 115px;
+    margin-right: 60px;
+    clip-path: polygon(14% 28%, 54% 7%, 100% 12%, 95% 41%, 68% 39%, 39% 56%, 13% 100%, 0 64%);
+    animation: cabeloi 2s ease infinite alternate;  
+}
+
+.hairoito {
+    width: 120px;
+    height: 190px;
+    margin-bottom: 115px;
+    margin-left: 30px;
+    clip-path: polygon(52% 9%, 84% 1%, 100% 13%, 95% 39%, 71% 42%, 38% 62%, 5% 100%, 12% 56%);
+    animation: cabeloi 2s ease infinite alternate;
+}
+
+@keyframes cabeloi {
+    100% {
+        background-color: lightblue;
+    }
+}
+
+.trapezio, .trapezio2 {
+    position: absolute;
+    background-color: #ebc3a9;
+}
+
+.trapezio {
+    width: 300px;
+    height: 300px;
+    margin-left: 350px;
+    bottom: 50px;
+    transform: rotate(20deg);
+    clip-path: polygon(31% 10%, 54% 24%, 78% 45%, 94% 73%, 71% 91%, 39% 94%, 23% 84%, 7% 66%, 0% 35%, 0 8%);
+}
+
+.trapezio2 {
+    width: 300px;
+    height: 300px;
+    margin-right: 350px;
+    bottom: 50px;
+    transform: rotate(-20deg);
+    clip-path: polygon(69% 10%, 46% 24%, 22% 45%, 6% 73%, 29% 91%, 61% 94%, 77% 84%, 93% 66%, 100% 35%, 100% 8%);
+}
+
+.pescoco {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 245px;
+    margin-left: 25px;
+    background-color: #f0c3a6;
+    clip-path: polygon(39% 43%, 55% 43%, 92% 0, 83% 63%, 69% 80%, 45% 94%, 24% 81%, 11% 63%, 4% 0);
+}
+
+.peito, .peito2 {
+    position: absolute;
+    background-color: #f3c8ac;
+    bottom: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.peito {
+    margin-left: 200px;
+    clip-path: ellipse(50% 37% at 50% 50%);
+}
+
+.peito2 {
+    margin-right: 200px;
+    clip-path: ellipse(50% 37% at 50% 50%);
+}
+
+.camiseta, .camiseta2, .camiseta3, .camiseta4 {
+    position: absolute;
+    background-color: #072083;
+}
+
+.camiseta {
+    width: 420px;
+    height: 400px;
+    top: 650px;
+    clip-path: polygon(19% 19%, 31% 23%, 43% 25%, 56% 24%, 69% 20%, 81% 14%, 99% 0, 88% 41%, 11% 42%, 0 0);
+}
+
+.camiseta2 {
+    width: 380px;
+    height: 200px;
+    top: 755px;
+    transform: rotate(-1.5deg);
+    clip-path: polygon(100% 30%, 65% 85%, 51% 100%, 41% 100%, 26% 86%, 0 29%);
+}
+
+.camiseta3 {
+    width: 35px;
+    height: 50px;
+    top: 627px;
+    margin-right: 380px;
+    transform: rotate(10deg);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 66% 100%, 0% 50%, 74% 0);
+}
+
+.camiseta4 {
+    width: 35px;
+    height: 55px;
+    top: 620px;
+    margin-left: 370px;
+    transform: rotate(-10deg);
+    clip-path: polygon(0% 0%, 25% 50%, 0% 100%, 34% 100%, 100% 50%, 26% 0);
+
+}
+
+.mangaleft, .mangaright {
+    position: absolute;
+    background-color: #072083;
+    top: 720px;
+    width: 270px;
+}
+
+.mangaleft {
+    height: 200px;
+    margin-right: 650px;
+    top: 750px;
+    transform: rotate(-15deg);
+    clip-path: polygon(42% 11%, 75% 0, 100% 20%, 100% 80%, 76% 100%, 29% 91%, 4% 65%, 18% 25%);
+}
+
+.mangaright {
+    height: 250px;
+    margin-left: 630px;
+    top: 720px;
+    transform: rotate(-15deg);
+    clip-path: polygon(58% 11%, 25% 0, 0% 20%, 0% 80%, 24% 100%, 71% 91%, 96% 65%, 82% 25%);
+
+}
+
+.colete, .colete2 {
+    position: absolute;
+    width: 300px;
+    background-color: #F85B1A;
+}
+
+.colete {
+    height: 320px;
+    margin-right: 500px;
+    top: 655px;
+    transform: rotate(-10deg);
+    clip-path: polygon(78% 0, 78% 50%, 100% 100%, 19% 100%, 7% 54%, 6% 22%);
+
+}
+
+.colete2 {
+    height: 350px;
+    margin-left: 450px;
+    top: 650px;
+    transform: rotate(15deg);
+    clip-path: polygon(94% 7.5%, 93% 54%, 81% 100%, 0% 100%, 22% 50%, 22% 0);
+}
+
+.force {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    left: 600px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force2 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    right: 600px;
+    margin-top: 70px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force3 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    right: 700px;
+    margin-bottom: 150px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force4 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    left: 800px;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force5 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    left: 700px;
+    margin-top: 500px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force6 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    right: 600px;
+    margin-top: 600px;
+    opacity: 0;
+    animation: upforce 2s ease infinite alternate;
+}
+
+.force7 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    left: 750px;
+    top: 90px;
+    opacity: 0;
+    animation: upforce2 2s ease infinite alternate;
+}
+
+.force8 {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: white;
+    border-left: #072083;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white,
+                0 0 10px lightblue,
+                0 0 15px lightblue,
+                0 0 20px lightblue,
+                0 0 20px white;
+    right: 750px;
+    top: 90px;
+    opacity: 0;
+    animation: upforce2 2s ease infinite alternate;
+}
+
+@keyframes upforce {
+    100% {
+        margin-bottom: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes upforce2 {
+    100% {
+        top: 1px;
+        opacity: 1;
+    }
+}
+
+.rugaraivadois {
+    margin-top: 290px;
+    margin-left: 50px;
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border-top: 1px solid #b88b6f;
+    transform: rotate(120deg);
+    opacity: 0;
+    animation: raiva 2s infinite alternate;
+}
+
+.rugaraivatres {
+    margin-top: 290px;
+    margin-right: 20px;
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border-top: 1px solid #b88b6f;
+    transform: rotate(-120deg);
+    opacity: 0;
+    animation: raiva 2s infinite alternate;
+}
+
+@keyframes raiva {
+    100% {
+        opacity: 0.3;
+    }
+}
+
